@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Enter City Name">
+            <button>
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </div>
+        <div class="weather">
+            <h2 class="city">Weather in City </h2>
+            <div class="flex1">
+                <div class="temp">51°C</div>
+                <div class="temp-details">
+                    <div class="max">
+                        <!-- <img src="" alt="" class="down" /> -->
+                        <span class="material-symbols-outlined">
+                            arrow_upward
+                            </span>
+                        <div class="maxtemp">51°C</div>
+                    </div>
+                    <div class="min">
+                        <!-- <img src="" alt="" class="up" /> -->
+                        <span class="material-symbols-outlined">
+                            arrow_downward
+                            </span>
+                        <div class="mintemp">40°C</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <img src="http://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="description">Cloudy</div>
+            </div>
+            <div class="humidityDetails">
+                <img src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" alt="" class="hum" />
+                <div class="humidity">Humidity: 60%</div>
+            </div>
+            <div class="windDetails">
+                <img src="https://th.bing.com/th/id/R.1e86927dc684f0ca398386ef5ed75f02?rik=4IvJkaBOLerK5g&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fwind-clipart-transparent%2fwind-clipart-transparent-19.png&ehk=6XLXb6WVeNsePxiqbgkpvYvGB5wfdejxaV8kxSrX%2bzs%3d&risl=&pid=ImgRaw&r=0"
+                    alt="" class="wi" />
+                <div class="wind">Wind Speed: 6.2km/h</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

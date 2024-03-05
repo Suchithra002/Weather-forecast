@@ -1,0 +1,131 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgba(46, 42, 5, 0.995);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://images.hdqwalls.com/download/clouds-summer-weather-5k-1b-1920x1080.jpg");
+}
+.card {
+    background-color: rgb(25, 18, 18,.6);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    position: relative;
+    width: 342px;
+    /* 100% */
+    max-width: 420px;
+    margin: 1em;
+}
+
+/* .card:hover{
+    box-shadow: 5px 5px gainsboro;
+} */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background-color: #7c7c7c5b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #7c7c7c9b;
+}
+
+input.search-bar {
+    border: rgb(23, 21, 21,.3) solid;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c5b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+input.search-bar:hover,
+input.search-bar:focus{
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236,20%);
+    background-color: white;
+    color: black;
+}
+input.search-bar::placeholder{
+    color: rgb(29, 27, 27,.5);
+}
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.temp{
+    font-size: 36px;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+}
+.temp-details{
+    display: flex;
+    font-size: 20px;
+    border: rgb(23, 14, 14,.1) 2px solid;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+.max,.min{
+    display: flex;
+    margin: 5px;
+}
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    /* margin-left: 8px; */
+}
+.humidityDetails{
+    display: flex;
+    align-items: center;
+    /* margin-left: 8px; */
+}
+.humidityDetails img{
+    max-height: 2rem;
+    margin-bottom: 0.5em;
+    /* margin-right: 0.5rem; */
+}
+.windDetails img{
+    max-height: 2rem;
+    /* margin-right: 0.5rem; */
+}
+.windDetails{
+    display: flex;
+    align-items: center;
+    /* margin-left: 8px; */
+}
